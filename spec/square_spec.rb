@@ -7,6 +7,5 @@ describe 'Square' do
     side_length = 4
     square = Square.new(coordinate, side_length)
     expect(square.area).to eq(16)
-
   end
 end
