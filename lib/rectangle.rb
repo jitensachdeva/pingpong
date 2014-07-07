@@ -7,8 +7,8 @@ class Rectangle
   end
 
   def collaborating_lines
-    line1 = Line.new(Coordinate.new(@coordinate1.x,@coordinate1.y),Coordinate.new(@coordinate1.x,@coordinate2.y))
-    line2 = Line.new(Coordinate.new(@coordinate1.x,@coordinate2.y),Coordinate.new(@coordinate2.x,@coordinate2.y))
+    line1 = Line.new(@coordinate1,Coordinate.new(@coordinate1.x,@coordinate2.y))
+    line2 = Line.new(Coordinate.new(@coordinate1.x,@coordinate2.y),@coordinate2)
     [line1,line2]
   end
 
